@@ -1,4 +1,9 @@
-# tests/test_amenity.py
+import sys, os
+current_path = os.path.abspath(os.path.dirname(__file__))
+models_directory = os.path.join(current_path, '..', '..', 'Models')
+sys.path.append(models_directory)
+
+
 import unittest
 from models.amenity import Amenity
 
