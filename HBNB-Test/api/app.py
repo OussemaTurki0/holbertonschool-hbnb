@@ -1,4 +1,3 @@
-# Import necessary modules and classes
 from flask import Flask, jsonify, request
 from models.user import User
 from models.place import Place
