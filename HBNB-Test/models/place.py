@@ -10,6 +10,14 @@ class Place(BaseModel):
         self.reviews = []  # List to store reviews for the place
         self.amenities = []  # List to store amenities for the place
 
+    # Methods to add amenities and reviews
+    def add_amenity(self, amenity):
+        if amenity.id not in self.amenities:
+            self.amenities.append(amenity.id)
+
+    def add_review(self, review):
+        self.reviews.append(review)
+
     def to_dict(self):
         data = super().to_dict()
         data.update({
@@ -17,5 +25,7 @@ class Place(BaseModel):
             'description': self.description,
             'city_id': self.city_id,
             'user_id': self.user_id,
+            'amenities': self.amenities,  # Serialize amenities
+            'reviews': [review.to_dict() for review in self.reviews],  # Serialize reviews
         })
         return data
