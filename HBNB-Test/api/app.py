@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request
 from models.user import User
 from models.place import Place
 from persistence.data_manager import DataManager
+import requests
 
 # Create a Flask application
 app = Flask(__name__)
@@ -111,3 +112,4 @@ def delete_place(place_id):
 # Run the Flask application if this script is executed directly
 if __name__ == '__main__':
     app.run(debug=True)
+
