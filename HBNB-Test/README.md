@@ -14,9 +14,6 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
 - [Dockerization](#dockerization)
-- [Persistent Storage](#persistent-storage)
-- [Testing and Verification](#testing-and-verification)
-
 ## Features
 
 - Create, read, update, and delete (CRUD) operations for users and places.
@@ -41,7 +38,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 
 2. **Install dependencies:**
 
-    Create and activate a virtual environment (optional but recommended):
+    Create and activate a virtual environment (optional):
 
     ```sh
     python3 -m venv venv
@@ -301,15 +298,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
     docker build -t hbnb-clone .
     ```
 
-3. **Run the Docker container:**
+## Authors
 
-    ```sh
-    docker run -d -p 5000:5000 --name hbnb-clone-container -v $(pwd)/data:/app/data hbnb-clone
-    ```
-
-## Persistent Storage
-
-To ensure data persists across container restarts, we use Docker volumes. The `data` directory in the container will store persistent data.
-
-```sh
-docker run -d -p 5000:5000 --name hbnb-clone-container -v $(pwd)/data:/app/data hbnb-clone
+- Ghofrane Amemi
+- Turki Oussema
