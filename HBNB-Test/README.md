@@ -69,8 +69,6 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
     flask run
     ```
 
-    The application should be running on `http://localhost:5000`.
-
 ## API Endpoints
 
 ### Users
