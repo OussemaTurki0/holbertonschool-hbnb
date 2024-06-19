@@ -4,8 +4,8 @@ import uuid
 class BaseModel:
     def __init__(self, *args, **kwargs):
         self.id = str(uuid.uuid4())  # Unique identifier for each instance
-        self.created_at = datetime.now()  # Timestamp when the instance was created
-        self.updated_at = datetime.now()  # Timestamp when the instance was last updated
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
     def save(self):
         self.updated_at = datetime.now()  # Update the updated_at timestamp

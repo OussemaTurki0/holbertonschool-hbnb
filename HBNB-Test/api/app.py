@@ -1,4 +1,3 @@
-# Import necessary modules and classes
 import os
 import sys
 from flask import Flask, jsonify, request
@@ -12,10 +11,10 @@ app = Flask(__name__)
 # Create a DataManager instance
 data_manager = DataManager()
 #-------------------------------------------------------------------------------------------------------------------------
-# Route to handle requests to the root URL '/'
+# Route to handle requests to the root URL
 @app.route('/', methods=['GET'])
 def index():
-    return jsonify({'message': 'Welcome!'}), 200
+    return jsonify({'message': 'Welcome Habyby!'}), 200
 #-------------------------------------------------------------------------------------------------------------------------
 # Route to create a new user
 @app.route('/users', methods=['POST'])

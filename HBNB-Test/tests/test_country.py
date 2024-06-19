@@ -2,19 +2,17 @@ import os
 import sys
 import unittest
 
-# Add the parent directory to the sys.path to import modules correctly
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Now you can import your models
 from models.country import Country
-from models.city import City  # Adjust this based on your project structure
+from models.city import City
 
 class TestCountry(unittest.TestCase):
 
     def setUp(self):
         """Set up test environment"""
         self.country = Country(name="TestCountry")
-        self.city = City(name="TestCity", country=None)  # Example city for testing
+        self.city = City(name="TestCity", country=None)
 
     def test_country_initialization(self):
         """Test the initialization of the Country object"""

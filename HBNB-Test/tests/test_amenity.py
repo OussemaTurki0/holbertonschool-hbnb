@@ -2,12 +2,10 @@ import os
 import sys
 import unittest
 
-# Add the parent directory to the sys.path to import modules correctly
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import the Amenity model
 from models.amenity import Amenity
-from models.base_model import BaseModel  # Import BaseModel
+from models.base_model import BaseModel
 
 
 class TestAmenity(unittest.TestCase):

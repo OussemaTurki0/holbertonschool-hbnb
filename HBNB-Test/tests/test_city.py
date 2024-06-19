@@ -3,10 +3,8 @@ import sys
 import unittest
 from datetime import datetime
 
-# Add the parent directory to the sys.path to import modules correctly
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import the City and Country models
 from models.city import City
 from models.country import Country
 from models.place import Place  # Adjust this based on your project structure

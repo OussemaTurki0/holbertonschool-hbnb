@@ -2,10 +2,8 @@ import os
 import sys
 import unittest
 
-# Add the parent directory to the sys.path to import modules correctly
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import the  models
 from models.place import Place
 from models.amenity import Amenity
 from models.review import Review
