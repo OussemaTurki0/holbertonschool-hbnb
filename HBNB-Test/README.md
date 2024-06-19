@@ -31,7 +31,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 ## Flowchart
 
 
-![Logo](https://ibb.co/PzKnxXV)
+![Logo](https://i.postimg.cc/5tpYx90G/0-1.png)
 
 
 ## Setup and Installation
