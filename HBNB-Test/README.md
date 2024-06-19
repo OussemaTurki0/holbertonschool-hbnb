@@ -10,6 +10,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 
 - [Features](#features)
 - [Requirements](#requirements)
+- [Diagram](#Diagram)
 - [Setup and Installation](#setup-and-installation)
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
@@ -26,6 +27,12 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 - Python 3.8+
 - Flask
 - Docker
+
+## Flowchart
+
+
+![Logo](https://ibb.co/PzKnxXV)
+
 
 ## Setup and Installation
 
