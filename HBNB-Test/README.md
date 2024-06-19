@@ -28,7 +28,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 - Flask
 - Docker
 
-## Flowchart
+## Diagram
 
 
 ![Logo](https://i.postimg.cc/5tpYx90G/0-1.png)
