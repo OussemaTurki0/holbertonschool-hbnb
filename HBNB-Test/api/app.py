@@ -6,6 +6,7 @@ from models.user import User
 from models.place import Place
 from persistence.data_manager import DataManager
 
+
 # Create a Flask application
 app = Flask(__name__)
 # Create a DataManager instance
