@@ -4,6 +4,7 @@ from persistence.ipersistence_manager import IPersistenceManager
 
 
 class UserRepository(IPersistenceManager):
+#empty dictionary to store user objects.
     def __init__(self):
         self.users = {}
 

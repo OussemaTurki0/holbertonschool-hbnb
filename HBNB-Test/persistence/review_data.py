@@ -4,6 +4,7 @@ from persistence.ipersistence_manager import IPersistenceManager
 
 
 class ReviewRepository(IPersistenceManager):
+#empty dictionary to store user objects.
     def __init__(self):
         self.reviews = {}
 
