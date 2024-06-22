@@ -1,5 +1,5 @@
 from datetime import datetime
-from model.place import Place
+from models.place import Place
 from persistence.ipersistence_manager import IPersistenceManager
 
 

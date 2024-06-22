@@ -1,5 +1,5 @@
 from datetime import datetime
-from model.review import Review
+from models.review import Review
 from persistence.ipersistence_manager import IPersistenceManager
 
 
