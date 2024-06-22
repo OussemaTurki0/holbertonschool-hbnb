@@ -4,7 +4,7 @@ from persistence.ipersistence_manager import IPersistenceManager
 
 
 class Place_Data(IPersistenceManager):
-#empty dictionary to store user objects.
+#empty dictionary to store place objects.
     def __init__(self):
         self.places = {}
 
