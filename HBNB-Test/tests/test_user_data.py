@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 class TestUserData(unittest.TestCase):
 
     def setUp(self):
-        self.data = UserRepository()
+        self.data = User_Data()
 
     def test_save_user(self):
         user = User(username='testuser', email='testuser@example.com',
