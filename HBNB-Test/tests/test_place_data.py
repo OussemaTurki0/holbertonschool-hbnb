@@ -1,10 +1,9 @@
 import unittest
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.place import Place
 from persistence.place_data import Place_Data
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class TestPlaceData(unittest.TestCase):
 
@@ -17,8 +16,6 @@ class TestPlaceData(unittest.TestCase):
             description='A place for testing',
             address='123 Test St',
             city_id='1',
-            latitude=40.7128,
-            longitude=-74.0060,
             host_id='1',
             number_of_rooms=3,
             number_of_bathrooms=2,
@@ -35,8 +32,6 @@ class TestPlaceData(unittest.TestCase):
             description='A place for testing',
             address='123 Test St',
             city_id='1',
-            latitude=40.7128,
-            longitude=-74.0060,
             host_id='1',
             number_of_rooms=3,
             number_of_bathrooms=2,
@@ -54,8 +49,6 @@ class TestPlaceData(unittest.TestCase):
             description='A place for testing',
             address='123 Test St',
             city_id='1',
-            latitude=40.7128,
-            longitude=-74.0060,
             host_id='1',
             number_of_rooms=3,
             number_of_bathrooms=2,
@@ -75,8 +68,6 @@ class TestPlaceData(unittest.TestCase):
             description='A place for testing',
             address='123 Test St',
             city_id='1',
-            latitude=40.7128,
-            longitude=-74.0060,
             host_id='1',
             number_of_rooms=3,
             number_of_bathrooms=2,
@@ -91,3 +82,4 @@ class TestPlaceData(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    

@@ -1,10 +1,9 @@
 import unittest
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.country import Country
 from persistence.country_data import Country_Data
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class TestCountryData(unittest.TestCase):

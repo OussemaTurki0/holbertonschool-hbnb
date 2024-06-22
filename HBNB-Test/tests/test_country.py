@@ -1,10 +1,8 @@
 import unittest
 import sys
 import os
-from models.country import Country
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+from models.country import Country
 
 class TestCountry(unittest.TestCase):
 

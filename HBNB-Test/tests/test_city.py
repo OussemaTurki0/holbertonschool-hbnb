@@ -1,9 +1,8 @@
 import unittest
 import sys
 import os
-from models.city import City
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from models.city import City
 
 
 class TestCity(unittest.TestCase):

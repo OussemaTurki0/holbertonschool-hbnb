@@ -1,11 +1,8 @@
 import unittest
 import sys
 import os
-from models.amenity import Amenity
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-
+from models.amenity import Amenity
 class TestAmenity(unittest.TestCase):
 
     def test_amenity_creation(self):

@@ -1,10 +1,9 @@
 import unittest
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from models.city import City
 from persistence.city_data import City_Data
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class TestCityData(unittest.TestCase):

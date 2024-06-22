@@ -1,9 +1,8 @@
 import unittest
 import sys
 import os
-from models.user import User
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from models.user import User
 
 class TestUser(unittest.TestCase):
 

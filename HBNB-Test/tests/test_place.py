@@ -1,9 +1,8 @@
 import unittest
 import sys
 import os
-from models.place import Place
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from models.place import Place
 
 
 class TestPlace(unittest.TestCase):
