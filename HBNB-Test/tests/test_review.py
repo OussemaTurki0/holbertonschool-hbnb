@@ -1,33 +1,25 @@
-import os
-import sys
 import unittest
+import sys
+import os
+from models.user import User
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from models.review import Review
-from models.base_model import BaseModel  # Import BaseModel
+class TestUser(unittest.TestCase):
 
-class TestReview(unittest.TestCase):
-
-    def setUp(self):
-        """Set up test environment"""
-        self.review = Review(user_id="test_user", place_id="test_place", text="Great experience!")
-
-    def test_review_initialization(self):
-        """Test the initialization of the Review object"""
-        self.assertEqual(self.review.user_id, "test_user")
-        self.assertEqual(self.review.place_id, "test_place")
-        self.assertEqual(self.review.text, "Great experience!")
-
+    def test_user_creation(self):
+        user = User(username='testuser', email='testuser@example.com',
+                    password='password')
+        self.assertEqual(user.username, 'testuser')
+        self.assertIsNotNone(user.user_id)
+        self.assertIsNotNone(user.created_at)
+        self.assertIsNotNone(user.updated_at)
     def test_to_dict(self):
-        """Test the to_dict method of the Review object"""
-        review_dict = self.review.to_dict()
-        self.assertEqual(review_dict['user_id'], "test_user")
-        self.assertEqual(review_dict['place_id'], "test_place")
-        self.assertEqual(review_dict['text'], "Great experience!")
-        self.assertIn('id', review_dict)
-        self.assertIn('created_at', review_dict)
-        self.assertIn('updated_at', review_dict)
+        user = User(username='testuser', email='testuser@example.com',
+                    password='password')
+        user_dict = user.to_dict()
+        self.assertEqual(user_dict['username'], 'testuser')
+        self.assertEqual(user_dict['user_id'], user.user_id)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
