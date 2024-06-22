@@ -1,5 +1,5 @@
 from datetime import datetime
-from model.city import City
+from models.city import City
 from persistence.ipersistence_manager import IPersistenceManager
 
 
