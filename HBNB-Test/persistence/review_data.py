@@ -3,7 +3,7 @@ from models.review import Review
 from persistence.ipersistence_manager import IPersistenceManager
 
 
-class ReviewRepository(IPersistenceManager):
+class Review_Data(IPersistenceManager):
 #empty dictionary to store user objects.
     def __init__(self):
         self.reviews = {}

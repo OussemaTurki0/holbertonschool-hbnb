@@ -3,7 +3,7 @@ from models.amenity import Amenity
 from persistence.ipersistence_manager import IPersistenceManager
 
 
-class AmenityRepository(IPersistenceManager):
+class Amenity_Data(IPersistenceManager):
 #empty dictionary to store user objects.
     def __init__(self):
         self.amenities = {}

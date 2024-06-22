@@ -3,7 +3,7 @@ from models.country import Country
 from persistence.ipersistence_manager import IPersistenceManager
 
 
-class CountryRepository(IPersistenceManager):
+class Country_Data(IPersistenceManager):
 #empty dictionary to store user objects.
     def __init__(self):
         self.countries = {}

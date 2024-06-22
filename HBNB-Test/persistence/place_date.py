@@ -3,7 +3,7 @@ from models.place import Place
 from persistence.ipersistence_manager import IPersistenceManager
 
 
-class PlaceRepository(IPersistenceManager):
+class Place_Data(IPersistenceManager):
 #empty dictionary to store user objects.
     def __init__(self):
         self.places = {}

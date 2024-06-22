@@ -3,7 +3,7 @@ from model.city import City
 from persistence.ipersistence_manager import IPersistenceManager
 
 
-class CityRepository(IPersistenceManager):
+class City_Data(IPersistenceManager):
 #empty dictionary to store user objects.
     def __init__(self):
         self.cities = {}
