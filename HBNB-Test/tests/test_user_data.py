@@ -2,11 +2,11 @@ import unittest
 import sys
 import os
 from models.user import User
-from persistence.user_data import UserRepository
+from persistence.user_data import User_Data
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-class TestUserRepository(unittest.TestCase):
+class TestUserData(unittest.TestCase):
 
     def setUp(self):
         self.data = UserRepository()
