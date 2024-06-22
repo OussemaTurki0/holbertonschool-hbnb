@@ -3,7 +3,7 @@ from models.user import User
 from persistence.ipersistence_manager import IPersistenceManager
 
 
-class UserRepository(IPersistenceManager):
+class User_data(IPersistenceManager):
 #empty dictionary to store user objects.
     def __init__(self):
         self.users = {}

@@ -4,7 +4,7 @@ from persistence.ipersistence_manager import IPersistenceManager
 
 
 class CountryRepository(IPersistenceManager):
-# Class for managing the persistence of countries
+#empty dictionary to store user objects.
     def __init__(self):
         self.countries = {}
 

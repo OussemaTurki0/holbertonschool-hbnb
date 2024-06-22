@@ -4,7 +4,7 @@ from persistence.ipersistence_manager import IPersistenceManager
 
 
 class CityRepository(IPersistenceManager):
-# Class for managing the persistence of cities."""
+#empty dictionary to store user objects.
     def __init__(self):
         self.cities = {}
 
@@ -19,7 +19,7 @@ class CityRepository(IPersistenceManager):
         return self.cities.get(city_id)
 
     def get_all(self):
-        """Fetches all cities."""
+# bring all cities."""
         return list(self.cities.values())
 
     def update(self, city_id, new_city_data):
