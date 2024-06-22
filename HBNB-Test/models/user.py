@@ -1,6 +1,7 @@
 from datetime import datetime
 import uuid
 
+
 class User:
     def __init__(self, username, email, password):
         self.user_id = str(uuid.uuid4())
@@ -12,7 +13,7 @@ class User:
         self.updated_at = datetime.now()
 
     def to_dict(self):
-#returns user as a dict----------------------------------------------
+#returns user as a dict
         return {
             'user_id': self.user_id,
             'username': self.username,

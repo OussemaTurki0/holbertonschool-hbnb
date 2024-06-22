@@ -11,7 +11,9 @@ from api.city_api import api as city_api
 app = Flask(__name__)
 api = Api(app)
 
-# Adding namespaces for each entity
+# Adding namespaces for each APiRoute
+# Example:"http://oussematurki.com/places"
+# Example:"http://Goffrane.com/users"
 api.add_namespace(place_api, path='/places')
 api.add_namespace(user_api, path='/users')
 api.add_namespace(review_api, path='/reviews')
