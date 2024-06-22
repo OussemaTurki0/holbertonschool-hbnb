@@ -1,17 +1,25 @@
-from models.base_model import BaseModel
+from datetime import datetime
+import uuid
 
-class Review(BaseModel):
-    def __init__(self, user_id, place_id, text, *args, **kwargs):
-        super().__init__(*args, **kwargs)  # Call the parent class constructor
+
+class Review:
+    def __init__(self, user_id, place_id, rating, comment):
+        self.review_id = str(uuid.uuid4())
         self.user_id = user_id
         self.place_id = place_id
-        self.text = text
+        self.rating = rating
+        self.comment = comment
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
     def to_dict(self):
-        data = super().to_dict()
-        data.update({
+# Returns the review as a dict
+        return {
+            'review_id': self.review_id,
             'user_id': self.user_id,
             'place_id': self.place_id,
-            'text': self.text,
-        })
-        return data
+            'rating': self.rating,
+            'comment': self.comment,
+            'created_at': self.created_at,
+            'updated_at': self.updated_at
+        }

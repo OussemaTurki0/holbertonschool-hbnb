@@ -1,32 +1,19 @@
 from datetime import datetime
-from models.base_model import BaseModel
+import uuid
 
-class Country(BaseModel):
-    def __init__(self, name, *args, **kwargs):
-        super().__init__(*args, **kwargs)  # Call the parent class constructor
+
+class Country:
+    def __init__(self, name):
+        self.country_id = str(uuid.uuid4())
         self.name = name
-        self.cities = []  # List to store cities in the country
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
-    def add_city(self, city):
-        if city not in self.cities:
-            self.cities.append(city)
-            city.country = self     # Update the City's reference to this Country
-            self.updated_at = datetime.now()  # Update timestamp
-
-    def remove_city(self, city):
-        if city in self.cities:
-            self.cities.remove(city)
-            city.country = None     # Remove the reference to this Country
-            self.updated_at = datetime.now()  # Update timestamp
-
-    def to_dict(self, include_cities=True):
-        data = super().to_dict()
-        if include_cities:
-            cities_list = [city.to_dict(include_country=False) for city in self.cities]
-        else:
-            cities_list = None
-        data.update({
+    def to_dict(self):
+# Returns the country as a dictionary
+        return {
+            'country_id': self.country_id,
             'name': self.name,
-            'cities': cities_list
-        })
-        return data
+            'created_at': self.created_at,
+            'updated_at': self.updated_at
+        }

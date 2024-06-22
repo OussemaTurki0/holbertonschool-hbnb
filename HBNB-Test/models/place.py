@@ -1,31 +1,41 @@
-from models.base_model import BaseModel
+from datetime import datetime
+import uuid
 
-class Place(BaseModel):
-    def __init__(self, name, description, city_id, user_id, *args, **kwargs):
-        super().__init__(*args, **kwargs)  # Call the parent class constructor
+
+class Place:
+    def __init__(self, name, description, address, city_id,
+                 host_id, number_of_rooms, number_of_bathrooms,
+                 price_per_night, max_guests, amenity_ids):
+        self.place_id = str(uuid.uuid4())
         self.name = name
         self.description = description
+        self.address = address
         self.city_id = city_id
-        self.user_id = user_id
-        self.reviews = []  # List to store reviews for the place
-        self.amenities = []  # List to store amenities for the place
-
-    # Methods to add amenities and reviews
-    def add_amenity(self, amenity):
-        if amenity.id not in self.amenities:
-            self.amenities.append(amenity.id)
-
-    def add_review(self, review):
-        self.reviews.append(review)
+        self.host_id = host_id
+        self.number_of_rooms = number_of_rooms
+        self.number_of_bathrooms = number_of_bathrooms
+        self.price_per_night = price_per_night
+        self.max_guests = max_guests
+        self.amenity_ids = amenity_ids
+        self.reviews = []
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
     def to_dict(self):
-        data = super().to_dict()
-        data.update({
+# Returns the place as a dictionary
+        return {
+            'place_id': self.place_id,
             'name': self.name,
             'description': self.description,
+            'address': self.address,
             'city_id': self.city_id,
-            'user_id': self.user_id,
-            'amenities': self.amenities,  # Serialize amenities
-            'reviews': [review.to_dict() for review in self.reviews],  # Serialize reviews
-        })
-        return data
+            'host_id': self.host_id,
+            'number_of_rooms': self.number_of_rooms,
+            'number_of_bathrooms': self.number_of_bathrooms,
+            'price_per_night': self.price_per_night,
+            'max_guests': self.max_guests,
+            'amenity_ids': self.amenity_ids,
+            'reviews': self.reviews,
+            'created_at': self.created_at,
+            'updated_at': self.updated_at
+        }
