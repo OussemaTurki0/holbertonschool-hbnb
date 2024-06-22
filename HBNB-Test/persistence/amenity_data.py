@@ -1,5 +1,5 @@
 from datetime import datetime
-from model.amenity import Amenity
+from models.amenity import Amenity
 from persistence.ipersistence_manager import IPersistenceManager
 
 
