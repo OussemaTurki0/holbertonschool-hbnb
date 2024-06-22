@@ -10,7 +10,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 ## Diagram
 
 
-![Logo](https://pasteboard.co/kC5UkUzDz8Tu.png)
+![Logo](https://i.postimg.cc/RZ9NXDtq/umlphoto.png)
 
 
 ## Authors
