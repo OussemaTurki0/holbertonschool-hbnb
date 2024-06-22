@@ -23,7 +23,7 @@ class PlaceRepository(IPersistenceManager):
         return list(self.places.values())
 
     def update(self, place_id, new_place_data):
-        """Updates an existing place."""
+#Updates an existing place
         if place_id in self.places:
             place = self.places[place_id]
             place.update_place_data(new_place_data)
@@ -33,7 +33,7 @@ class PlaceRepository(IPersistenceManager):
         return False
 
     def delete(self, place_id):
-        """Deletes an existing place."""
+# Deletes an existing place
         if place_id in self.places:
             del self.places[place_id]
             return True
