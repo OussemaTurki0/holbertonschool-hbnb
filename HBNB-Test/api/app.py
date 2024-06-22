@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-"""Entry point for the application."""
-
 import os
 from flask import Flask
 from flask_restx import Api
