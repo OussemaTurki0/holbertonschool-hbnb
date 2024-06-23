@@ -4,13 +4,13 @@
 
 # HBNB Clone
 
-This project is a backend clone of the Holberton B&B (HBNB) web application. The application is built using Flask and provides RESTful APIs for managing users and places. It also includes a Docker configuration to containerize the application for consistent deployment across different environments.
+This project is a backend clone of the Holberton B&B (HBNB) web application. The application is built using Flask and provides RESTful APIs for managing users, places, cities, reviews, amenities and country.
 
 
 ## Diagram
 
 
-![Logo](https://i.postimg.cc/RZ9NXDtq/umlphoto.png)
+![Logo](https://lucid.app/lucidchart/f6bf6b4a-4f17-422c-b007-b1cac84235c7/edit?invitationId=inv_36494bf4-12c6-4ad9-999b-ed9497e2d6ba)
 
 
 ## Authors
