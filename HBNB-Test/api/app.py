@@ -23,4 +23,4 @@ api.add_namespace(city_api, path='/cities')
 
 
 if __name__ == "__main__":
-    app.run()  # Run
+    app.run(debug=True, port=5000)  # Run
