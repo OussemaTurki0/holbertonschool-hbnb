@@ -10,7 +10,7 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 ## Diagram
 
 
-![Logo](https://lucid.app/lucidchart/f6bf6b4a-4f17-422c-b007-b1cac84235c7/edit?invitationId=inv_36494bf4-12c6-4ad9-999b-ed9497e2d6ba)
+![Logo](https://ibb.co/Z6F0ymF)
 
 
 ## Authors
