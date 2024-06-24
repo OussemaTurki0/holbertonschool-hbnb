@@ -23,3 +23,8 @@ class User:
             'created_at': self.created_at,
             'updated_at': self.updated_at
         }
+    def update_user_data(self, new_data):
+# Updates user data
+        for key, value in new_data.items():
+            setattr(self, key, value)
+        self.updated_at = datetime.now()

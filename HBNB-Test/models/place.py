@@ -39,3 +39,8 @@ class Place:
             'created_at': self.created_at,
             'updated_at': self.updated_at
         }
+    def update_place_data(self, new_data):
+# Updates place
+        for key, value in new_data.items():
+            setattr(self, key, value)
+        self.updated_at = datetime.now()
