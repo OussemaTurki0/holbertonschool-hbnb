@@ -8,9 +8,9 @@ This project is a backend clone of the Holberton B&B (HBNB) web application. The
 
 
 ## Diagram
-<a href="https://ibb.co/Z6F0ymF"><img src="https://i.ibb.co/tMv9yXv/0-1.png" alt="0-1" border="0"></a>
 
-![Logo](<a href="https://ibb.co/Z6F0ymF"><img src="https://i.ibb.co/tMv9yXv/0-1.png" alt="0-1" border="0"></a>)
+
+<a href="https://ibb.co/Z6F0ymF"><img src="https://i.ibb.co/tMv9yXv/0-1.png" alt="0-1" border="0"></a>
 
 
 ## Authors
